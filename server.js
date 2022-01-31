@@ -6,7 +6,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('Welcome to your basic server!')
+  res.status(200).send('Welcome to your basic server!')
 });
 
 app.listen(PORT, () => {
